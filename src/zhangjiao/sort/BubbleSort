@@ -1,0 +1,30 @@
+package com.example.demo41;
+
+public class BubbleSort {
+    public int[] bubbleSort(int[]array){
+        int len=array.length;
+        for(int i=0;i<len-1;i++)
+        {
+            int count=0;
+            for(int j=0;j<len-i-1;j++)
+                if(array[j]>array[j+1])
+                {
+                    count++;
+                    int temp=array[j+1];
+                    array[j+1]=array[j];
+                    array[j]=temp;
+                }
+            if(count==0)
+                break;
+        }
+        return array;
+    }
+    public static void main(String []args){
+        BubbleSort s=new BubbleSort();
+        int []arr={1,4,2,6,4,9,4};
+        int res[]=s.bubbleSort(arr);
+        int i=0;
+        while(i<res.length)
+            System.out.print(res[i++]+" ");
+    }
+}
