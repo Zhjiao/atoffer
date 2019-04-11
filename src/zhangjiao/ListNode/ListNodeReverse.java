@@ -1,3 +1,5 @@
+package zhangjiao.ListNode;
+
 import java.util.ArrayList;
 public class ListNodeReverse {
     public static class ListNode {

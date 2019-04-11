@@ -1,10 +1,5 @@
-class ListNode{
-    int val;
-    ListNode next=null;
-    ListNode(int n){
-        val=n;
-    }
-}
+package zhangjiao.ListNode;
+
 public class DeleteNode{
 
    public ListNode deleteNode(ListNode head,ListNode tobeDelete){

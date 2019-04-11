@@ -1,14 +1,16 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+package zhangjiao.ListNode;
+
+
+  //Definition for singly-linked list.
+  class ListNode {
+      int val;
+      ListNode next;
+      ListNode(int x) {
+          val = x;
+          next = null;
+      }
+  }
+
 public class GetIntersectionNode {
 
 //假设链表中不存在环

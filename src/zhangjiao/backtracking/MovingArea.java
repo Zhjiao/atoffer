@@ -1,4 +1,4 @@
-package com.example.demo41;
+package zhangjiao.backtracking;
 
 public class MovingArea {
     private int rows;

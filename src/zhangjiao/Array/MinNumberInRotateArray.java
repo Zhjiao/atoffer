@@ -1,3 +1,5 @@
+package zhangjiao.Array;
+
 public class MinNumberInRotateArray {
     public static int minNumberInRotateArray(int[] nums){
         if(nums.length==0)

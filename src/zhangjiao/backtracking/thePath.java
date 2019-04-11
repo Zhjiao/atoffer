@@ -1,3 +1,5 @@
+package zhangjiao.backtracking;
+
 public class thePath {
 
         private int [][]next={{1,0},{-1,0},{0,1},{0,-1}};

@@ -1,3 +1,5 @@
+package zhangjiao.ListNode;
+
 public class CircleEntrance {
  /*
  * 判断是否存在环，如果存在，则找出环的入口点。
