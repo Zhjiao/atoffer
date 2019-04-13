@@ -1,4 +1,4 @@
-package zhangjiao;
+package zhangjiao.String;
 public class LeetcodeReverseVowels {
     public static String reverseVowels(String s) {
 

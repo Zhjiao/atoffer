@@ -1,3 +1,5 @@
+package zhangjiao.sort;
+
 public class InsertSort {
 
     public int[] insertSort(int []number){

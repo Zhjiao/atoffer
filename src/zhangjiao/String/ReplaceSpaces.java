@@ -1,3 +1,5 @@
+package zhangjiao.String;
+
 public class ReplaceSpaces {
     public static String replaceSpace(StringBuffer str) {
         //先从前向后遍历，确定更改后的字符串的长度，再从后向前进行赋值

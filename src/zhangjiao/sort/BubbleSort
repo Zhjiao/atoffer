@@ -1,4 +1,4 @@
-package com.example.demo41;
+package zhangjiao.sort;
 
 public class BubbleSort {
     public int[] bubbleSort(int[]array){

@@ -1,3 +1,5 @@
+package zhangjiao.tree;
+
 public class GetNextTreeNode {
     public class TreeLinkNode{
         int val;
