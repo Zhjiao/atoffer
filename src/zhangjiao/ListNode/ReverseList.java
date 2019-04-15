@@ -8,6 +8,12 @@ public class ReverseList {
             head.next=newList.next;
             newList.next=head;
             head=next;
+            
+            //或者如下
+//            ListNode next=new ListNode(head.val);
+//            next.next=newList.next;
+//            newList.next=next;
+//            head=head.next;
         }
         return newList.next;
     }
