@@ -1,3 +1,5 @@
+package zhangjiao;
+
 public class JumpFloor {
 
     //一次可以跳一阶梯，也可以跳两阶梯，跳上n级的阶梯共有几种方法
