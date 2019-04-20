@@ -26,7 +26,7 @@ class TreeNode{
         int inIndex=indexForInOrders.get(root.val);
         int leftTreeSize=inIndex-inL;
         root.left=reConstructBinaryTree(pre,preL+1,preL+leftTreeSize,inL);
-        root.right=reConstructBinaryTree(pre,preL+1+leftTreeSize,preR,inL+leftTreeSize+1);
+        root.right=reConstructBinaryTree(pre,preL+1+leftTreeSize,preR,inIndex+1);
         return root;
     }
 }
