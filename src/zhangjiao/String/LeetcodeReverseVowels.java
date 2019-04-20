@@ -1,14 +1,11 @@
 package zhangjiao.String;
 public class LeetcodeReverseVowels {
-    public static String reverseVowels(String s) {
-
+    public static String reverseVowels(String s){
         int i,j;
-        char[] s1=s.toCharArray();
-        for(i=0,j=s1.length-1;i<j;)
-        {
-            if(s1[i]=='a'||s1[i]=='e'||s1[i]=='i'||s1[i]=='o'||s1[i]=='u'||s1[i]=='A'||s1[i]=='E'||s1[i]=='I'||s1[i]=='O'||s1[i]=='U')
-            {
-                if(s1[j]=='a'||s1[j]=='e'||s1[j]=='i'||s1[j]=='o'||s1[j]=='u'||s1[j]=='A'||s1[j]=='E'||s1[j]=='I'||s1[j]=='O'||s1[j]=='U')
+        char[]s1=s.toCharArray();
+        for(i=0,j=s1.length-1;i<j;){
+            if(isVowels(s1[i])){
+                if(isVowels(s1[j]))
                 {
                     char temp=s1[i];
                     s1[i]=s1[j];
@@ -16,18 +13,17 @@ public class LeetcodeReverseVowels {
                     i++;j--;
                 }
                 else
-                {
                     j--;
-                 }
             }
             else
-            {
                 i++;
-            }
         }
-        String s2=new String(s1);
-        return s2;
-
+        return new String(s1);
+    }
+    private static boolean isVowels(char c){
+        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+            return true;
+        return false;
     }
     public static void main(String[]args){
 
