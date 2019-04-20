@@ -1,7 +1,7 @@
 package zhangjiao.tree;
 
 public class GetNextTreeNode {
-    public class TreeLinkNode{
+    class TreeLinkNode{
         int val;
         TreeLinkNode left=null;
         TreeLinkNode right=null;
@@ -22,13 +22,13 @@ public class GetNextTreeNode {
             return n;
         }
         else{
-            TreeLinkNode parent=null;
-            while(p.next!=null)
+            TreeLinkNode parent=p.next;
+            while(parent!=null)
             {
-                parent=p.next;
                 if(parent.left==p)
                     return parent;
                 p=p.next;
+                parent=p.next;
             }
             return null;
         }
