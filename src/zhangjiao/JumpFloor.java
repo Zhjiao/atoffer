@@ -16,6 +16,16 @@ public class JumpFloor {
        }
        return res;
     }
+//    public int JumpFloorI(int target) {
+//        if(target == 0)
+//            return 1;
+//        if(target == 1)
+//            return 1;
+//        return JumpFloorI(target - 1)+JumpFloorI(target - 2);
+//    }
+
+
+
 
     public int jumpFloor2(int target){
         //一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。跳上一个n级的台阶总共有多少种跳法
@@ -27,5 +37,12 @@ public class JumpFloor {
         }
         return res;
    }
+//    public int JumpFloorII(int target) {
+//        if(target == 0)
+//            return 1;
+//        if(target == 1)
+//            return 1;
+//        return 2*JumpFloorII(target - 1);
+//    }
 
 }
