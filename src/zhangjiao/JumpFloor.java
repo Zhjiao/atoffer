@@ -9,7 +9,7 @@ public class JumpFloor {
            return target;
        int res=0;
        int pre1=2;int pre2=1;
-       for(int i=3;i<target;i++){
+       for(int i=3;i<=target;i++){
            res=pre1+pre2;
            pre2=pre1;
            pre1=res;
