@@ -6,7 +6,7 @@ public class GreatestSumOfSubArray {
     public int FindGreatestSumOfSubArray(int[]nums){
         if(nums==null||nums.length==0)
             return 0;
-        int greatestSum=Integer.MAX_VALUE;  //取整数的 最小值
+        int greatestSum=Integer.MIN_VALUE;  //取整数的 最小值
         int sum=0;
         for(int val:nums){
             // 如果当前和小于等于0，就重新设置当前和
